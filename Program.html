@@ -1,0 +1,57 @@
+<!-- Program No 6. Create an Internal Style Sheet that defines a style for Positioning elements & setting the background (color / image) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Internal CSS Example</title>
+<style>
+/* Background styling */
+body {
+background-color: lightblue; /* background color */
+background-image: url('background.jpg'); /* background image */
+background-size: cover; /* make image cover full screen */
+background-repeat: no-repeat; /* no repeat of image */
+margin: 0;
+padding: 0;
+}
+/* Positioning elements */
+.box1 {
+position: relative; /* positioned relative to normal flow */
+top: 20px;
+left: 30px;
+width: 200px;
+height: 100px;
+background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid black;
+}
+.box2 {
+position: absolute; /* positioned relative to nearest positioned parent */
+top: 150px;
+left: 100px;
+width: 200px;
+height: 100px;
+background-color: yellow;
+border: 2px solid red;
+}
+.box3 {
+position: fixed; /* stays fixed even when scrolling */
+bottom: 10px;
+right: 10px;
+width: 150px;
+height: 70px;
+background-color: green;
+color: white;
+text-align: center;
+line-height: 70px;
+border-radius: 10px;
+}
+</style>
+  </head>
+<body>
+<h1 style="text-align:center;">Internal CSS Example</h1>
+<div class="box1">Box with Relative Position</div>
+<div class="box2">Box with Absolute Position</div>
+<div class="box3">Fixed Box</div>
+</body>
+</html>
